@@ -1,0 +1,41 @@
+*.psess
+*.vsp
+*.log
+*.tlog
+*.lastbuildstate
+*.err
+*.wrn
+*.suo
+*.sdf
+*.VC.db
+*.user
+*.i
+*.vspscc
+*.opensdf
+*.pch
+*.ipch
+*.cache
+*.ilk
+*.obj
+*.iobj
+*.aps
+*.zip
+/luabind/luabind
+/luabind/src
+/luabind/_sln_vs2012/Win32
+/luabind/_sln_vs2012/x64
+/luabind/_sln_vs2012_win8/Win32
+/luabind/_sln_vs2012_win8/x64
+/luabind/_sln_vs2012_win8/Generated Files
+/lua5/_sln_vs2012/bin
+/lua5/_sln_vs2012/obj
+/lua5/_sln_vs2012_win8/bin
+/lua5/_sln_vs2012_win8/obj
+/lua5/_sln_vs2012_win8/Generated Files
+/lua5/src
+/StoreAppLuaTest1/.vs
+/StoreAppLuaTest1/Generated Files
+/StoreAppLuaTest1/ipch
+/StoreAppLuaTest1/Win32
+/StoreAppLuaTest1/x64
+/StoreAppLuaTest1/ARM

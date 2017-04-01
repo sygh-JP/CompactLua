@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="StoreAppLuaTest1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StoreAppLuaTest1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="3">
+            <TextBlock FontSize="22" HorizontalAlignment="Center">Test of Lua 5.3 for Windows Store App</TextBlock>
+            <TextBlock FontSize="18">Lua スクリプト:</TextBlock>
+            <TextBox Height="400" AcceptsReturn="True" FontFamily="Consolas" Background="WhiteSmoke" Foreground="#303030" Name="textboxInput"></TextBox>
+            <Button Name="buttonExecute" Click="buttonExecute_Click">実行</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock FontSize="18">出力:</TextBlock>
+            <Button Name="buttonClearOutput" Click="buttonClearOutput_Click">出力のクリア</Button>
+        </StackPanel>
+        <TextBox Grid.Row="2" Grid.Column="0" IsReadOnly="True" AcceptsReturn="True" FontFamily="Consolas" Background="Transparent" Foreground="WhiteSmoke" Name="textboxOutput" Text=""></TextBox>
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <TextBlock FontSize="18">エラー:</TextBlock>
+            <Button Name="buttonClearError" Click="buttonClearError_Click">エラーメッセージのクリア</Button>
+        </StackPanel>
+        <TextBox Grid.Row="2" Grid.Column="2" IsReadOnly="True" AcceptsReturn="True" FontFamily="Consolas" Background="Transparent" Foreground="Red" Name="textboxError" Text=""></TextBox>
+    </Grid>
+</Page>

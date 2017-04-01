@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="共通">
+      <UniqueIdentifier>4ae73158-6946-4105-aaad-c37f3271343a</UniqueIdentifier>
+    </Filter>
+    <Filter Include="資産">
+      <UniqueIdentifier>882253de-3df8-43d7-9de3-27367ebc25c8</UniqueIdentifier>
+    </Filter>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>共通</Filter>
+    </Page>
+    <Image Include="Assets\Logo.png">
+      <Filter>資産</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>資産</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>資産</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>資産</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="LuaTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="LuaTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StoreAppLuaTest1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+</Project>
