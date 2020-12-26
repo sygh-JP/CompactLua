@@ -19,7 +19,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.ColumnSpan="3">
-            <TextBlock FontSize="22" HorizontalAlignment="Center">Test of Lua 5.3 for Windows Store App</TextBlock>
+            <TextBlock FontSize="22" HorizontalAlignment="Center">Test of Lua 5.4 for Windows Store App</TextBlock>
             <TextBlock FontSize="18">Lua スクリプト:</TextBlock>
             <TextBox Height="400" AcceptsReturn="True" FontFamily="Consolas" Background="WhiteSmoke" Foreground="#303030" Name="textboxInput"></TextBox>
             <Button Name="buttonExecute" Click="buttonExecute_Click">実行</Button>

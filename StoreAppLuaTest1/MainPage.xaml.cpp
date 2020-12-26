@@ -48,13 +48,14 @@ MainPage::MainPage()
 	// Lua へ渡すときに UTF-8 に変換しているので、日本語も自由に使用可能。
 	// ビット演算ライブラリが Lua 5.2 で追加されたが、Lua 5.3 ではビット演算子が追加されたため、非標準になった模様。
 	// Lua 5.3 では LUA_COMPAT_5_2 を定義してコンパイルしないとビット演算ライブラリが使えない。
+	// Lua 5.4 ではビット演算ライブラリが完全削除されたため、LUA_COMPAT_5_2 を定義してコンパイルしても使えない。
 #if 1
 	this->textboxInput->Text =
 		L"Print('hoge日本語ソース');\r\n"
 		L"x = 10.1;\r\n"
 		L"Print(x .. '');\r\n"
-		L"y = bit32.bor(1, 2);\r\n"
-		L"Print(y .. '');\r\n"
+		L"--y = bit32.bor(1, 2);\r\n"
+		L"--Print(y .. '');\r\n"
 		L"z = 1 | 2;\r\n"
 		L"Print(z .. '');\r\n"
 		L"Print(2.0 .. '');\r\n"

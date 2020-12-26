@@ -99,9 +99,6 @@
     <ClCompile Include="..\src\lzio.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\lbitlib.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\_custom_src\winrt_lua_dummy_func.cpp">
       <Filter>src</Filter>
     </ClCompile>

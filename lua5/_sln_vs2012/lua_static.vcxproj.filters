@@ -99,9 +99,6 @@
     <ClCompile Include="..\src\lzio.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\lbitlib.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\lutf8lib.c">
       <Filter>src</Filter>
     </ClCompile>
