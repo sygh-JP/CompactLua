@@ -31,6 +31,9 @@ inline void lua_gettable(lua_State* L, const DummyClassForLegacyLuaGlobalsIndex&
 inline void lua_pushglobaltable(lua_State* L) { lua_pushvalue(L, LUA_GLOBALSINDEX); }
 #endif
 
+// Suppress automatic inclusion of <boost/bind/placeholders.hpp> in <boost/bind/bind.hpp> in order to avoid conflict between Boost and C++11 placeholders.
+#define BOOST_BIND_NO_PLACEHOLDERS
+
 // Luabind 0.9.1 uses "boost::operator" but it has been moved to "boost::iterators::operator" in Boost 1.57.0 or later.
 // As a result, many compilation errors will occur at the macro "LUABIND_OPERATOR_ADL_WKND" in "luabind/object.hpp".
 // One of the best and wisest solutions is to modify the source code of Luabind directly.

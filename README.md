@@ -7,7 +7,7 @@ This is a library forked from Lua in order to use it in Windows Store Apps (WinR
 * Microsoft Visual Studio 2012 Update 5
 * [Lua](http://www.lua.org/) 5.4.2
 * [Luabind](https://www.rasterbar.com/products/luabind.html) 0.9.1
-* [Boost C++](https://www.boost.org/) 1.63.0
+* [Boost C++](https://www.boost.org/) 1.75.0
 
 ## Target Environment (ターゲット環境)
 * Windows Vista/Windows 7/Windows 8.1/Windows 10 (Desktop)
@@ -23,4 +23,4 @@ This is a library forked from Lua in order to use it in Windows Store Apps (WinR
 
 You can append the global include and library directory paths above by editing "Microsoft.Cpp.Win32.user.props" or "Microsoft.Cpp.x64.user.props" in "%LocalAppData%\Microsoft\MSBuild\v4.0".
 
-2020-12-27, sygh.
+2020-12-29, sygh.
